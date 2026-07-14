@@ -30,9 +30,11 @@ Prefer to build them yourself? The full steps are further down, and they're wort
 
 ## Why
 
-I keep a machine on 24/7 (mine's a Mac mini, but any always-on Unix host works) and run Claude Code sessions on it. The friction was always the last mile: to start or reach a session from my phone I had to open an SSH client, land in tmux, and type the same commands by hand. These shortcuts collapse that into one tap.
+**Claude Code's Remote Control can only be started from the machine, never from the phone.** You can steer a running session from claude.ai/code all you like, but nothing on the phone will *start* one. The host has to do it.
 
-The trick that makes it work: `claude --remote-control` registers a session that shows up at claude.ai/code, so once a shortcut launches one on the host, I steer it from the phone's browser. The shortcut only has to *start* it.
+I keep a machine on 24/7 (mine's a Mac mini, but any always-on Unix host works), so there's always something there to run the work. The last mile was the problem: to get a session going from my phone I'd open an SSH client, land in tmux, and type the same commands by hand. These shortcuts collapse that into one tap. The host still starts the session, it just does it because you tapped an icon.
+
+The rest follows from the feature itself: `claude --remote-control` registers the session at claude.ai/code, so once a shortcut launches it, you drive it from the phone's browser. The shortcut only has to *start* it.
 
 ## How it works
 
