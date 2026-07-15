@@ -1,4 +1,4 @@
-# ios-shortcuts
+# Claude Code from iOS
 
 Drive Claude Code on an always-on machine from your phone. No terminal, no laptop, no SSH client to fumble with.
 
